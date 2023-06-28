@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Прибей гоблина!</title>
+</head>
+<body>
+  <script src="./js/app.js" type="module"></script>
+  <div>
+    <h1>Прибей гоблина!</h1>
+    <div class="control">
+      <div class="control_wins">Количество попаданий: <span>0</span></div>
+      <div class="control_miss">Количество промахов: <span>0</span></div>
+      <div class="control_show">Количество появлений: <span>0</span></div>
+    </div>
+    <div class="board"></div>
+  </div>
+  <div class="modal hidden">
+    <div class="modal_window">
+        <h2 class="miss hidden"> Вы проиграли :(</h2>
+        <h2 class="wins hidden"> Вы победили! :)</h2>
+        <div>
+            <button type="submit" class="button hidden">Новая игра</button>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
