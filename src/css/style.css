@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(153, 253, 253);
+    font-size: 18px;
+    line-height: 180%;
+    color: #000;
+    text-align: center;
+  }
+  
+  .board {
+    margin-top: 30px;
+    display: grid; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .board-item {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+    background: rgb(23, 236, 51);
+    border: 1px solid black;
+    
+  }
+  
+  .goblin {
+    background-image: url('../img/goblin.png');
+    background-size: contain;
+    cursor: url('../img/pngwing.png'), auto;/*  pointer;*/
+  }
+  
+  .control {
+    display: flex;
+    justify-content: center;  
+  }
+  
+  .control_wins span, .control_miss span, .control_show span {
+    color: rgb(138, 6, 6);
+    font-size: 40px;
+    margin: 0 10px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .button {
+    min-width: 100px;
+    border: 1px solid lightgray;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 20pt;
+    border-radius: 15px;
+    color: #000;
+  }
+  
+  .button:hover {
+    background-color: rgb(226, 132, 210);
+    color: darkred;
+    box-shadow: 2px 1px 0 rgb(0, 0, 0);
+    cursor: pointer;
+  }
+  
+  .button:active {
+    box-shadow: inset 2px 1px 0;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal_window {
+    position: relative;
+    top: 30%;
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px 20px 20px;
+    background-color: #f8f6f6;
+    text-align: center;
+  }
